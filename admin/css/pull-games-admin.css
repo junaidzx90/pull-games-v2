@@ -1,0 +1,89 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ div#pullgames {
+    width: calc(100% - 20px);
+}
+ div#pullgames ._tabs {
+    display: flex;
+    margin-top: 20px;
+    background: #ddd;
+}
+ div#pullgames ._tabs a {
+    padding: 5px 10px;
+    background: #ddd;
+    text-decoration: none;
+    color: #000;
+}
+div#pullgames ._tabs a.active {
+    background: #2196f3;
+    color: #fff;
+}
+.content_wrapper {
+    border: 1px solid #ddd;
+}
+._tab_contents {
+    padding: 10px;
+}
+table#resultset {
+    border-collapse: collapse;
+    margin: 0;
+    width: 50%;
+    border: 1px solid #2196f3;
+}
+table#resultset thead {
+    background: #2196f3;
+    color: #fff;
+}
+table#resultset thead tr th, table#resultset tbody tr td{
+    padding: 5px;
+    text-align: left;
+}
+table#resultset thead tr th:first-child, table#resultset tbody tr td:first-child{
+    width: 30px !important;
+}
+table#resultset tbody tr:nth-child(even) {
+    background: #e5e5e5;
+}
+button#import_games {
+    background: #2196f3;
+    border-color: #2196f3;
+    color: #fff;
+}
+button#import_games:hover, button#import_games:focus {
+    background: #1b78c4;
+    border-color: #1b78c4;
+    color: #fff;
+}
+table#resultset {
+    border-collapse: collapse;
+    margin: 0;
+    width: 50%;
+    border: 1px solid #2196f3;
+    margin-bottom: 10px;
+}
+.filter_input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.experience_filter_box .selectize-control {
+    margin-bottom: 10px;
+}
+.pg_loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    z-index: 9999999;
+    background: #ffffff40;
+}
+.dnone{
+    display: none !important;
+}
