@@ -246,7 +246,7 @@ class Pull_Games_Admin {
 	}
 
 	function setfeatured_image( $image_url, $post_id  ){
-		$image_name       = 'wp-header-logo.png';
+		$image_name       = 'pull-game.png';
 		$upload_dir       = wp_upload_dir();
 		$image_data       = file_get_contents($image_url);
 		$unique_file_name = wp_unique_filename( $upload_dir['path'], $image_name );
@@ -387,10 +387,6 @@ class Pull_Games_Admin {
 			);
 
 			$post_id = wp_insert_post($args);
-			
-			$imageurl = $this->get_image_url($game['rootPlaceId']);
-			$this->setfeatured_image($imageurl, $post_id);
-
 			return $post_id;
 		}
 	}
